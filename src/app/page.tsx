@@ -10,14 +10,15 @@ import { Navbar } from '@/components/Navbar';
 
 const FloatingIcon = ({ icon, index }: { icon: string; index: number }) => {
   const controls = useAnimationControls();
-  const glowColors = [
-    'rgba(59, 130, 246, 0.8)', // blue
-    'rgba(139, 92, 246, 0.8)', // purple
-    'rgba(236, 72, 153, 0.8)', // pink
-    'rgba(34, 197, 94, 0.8)', // green
-  ];
 
   useEffect(() => {
+    const glowColors = [
+      'rgba(59, 130, 246, 0.8)', // blue
+      'rgba(139, 92, 246, 0.8)', // purple
+      'rgba(236, 72, 153, 0.8)', // pink
+      'rgba(34, 197, 94, 0.8)', // green
+    ];
+
     const animate = async () => {
       await controls.start({
         x: [0, Math.sin(index) * 150, -Math.sin(index) * 150, 0],
@@ -39,7 +40,7 @@ const FloatingIcon = ({ icon, index }: { icon: string; index: number }) => {
     };
 
     animate();
-  }, [controls, index, glowColors]);
+  }, [controls, index]);
 
   const getIconColor = () => {
     switch(icon) {

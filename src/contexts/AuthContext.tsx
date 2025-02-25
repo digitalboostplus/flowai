@@ -3,7 +3,7 @@
 import { createContext, useContext, ReactNode, useEffect, useState } from 'react';
 import { User } from 'firebase/auth';
 import { useAuthState, useSignInWithGoogle, useSignOut } from 'react-firebase-hooks/auth';
-import { auth, googleProvider } from '@/lib/firebase';
+import { auth } from '@/lib/firebase';
 import { SpinnerGap } from '@phosphor-icons/react';
 
 interface AuthContextType {
