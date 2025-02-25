@@ -49,17 +49,17 @@ export function WorkflowBuilder() {
             padding: 20,
             nodeSpacing: 50,
             rankSpacing: 50,
-            defaultRenderer: 'dagre',
+            defaultRenderer: 'dagre-wrapper',
           },
           themeVariables: {
             darkMode: true,
             background: '#000000',
-            primaryColor: '#1f4532',
-            primaryTextColor: '#4ade80',
-            primaryBorderColor: '#4ade80',
-            lineColor: '#4ade80',
-            secondaryColor: '#1f3f52',
-            tertiaryColor: '#1f1f52'
+            primaryColor: '#1d4ed8',
+            primaryTextColor: '#fff',
+            primaryBorderColor: '#1d4ed8',
+            lineColor: '#1d4ed8',
+            secondaryColor: '#4b5563',
+            tertiaryColor: '#1f2937'
           }
         });
       } catch (error) {
